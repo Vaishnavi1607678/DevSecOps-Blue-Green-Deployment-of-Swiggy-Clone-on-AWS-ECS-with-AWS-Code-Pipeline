@@ -340,6 +340,10 @@ Observe that the traffic is routing to TG-2 (Green) instead of TG-1(Blue).
 
 Observe that the title changed as expected.
 
+<img width="1080" height="572" alt="Screenshot 2025-10-24 184652" src="https://github.com/user-attachments/assets/b010c85a-0945-4284-a703-530a6fa596e4" />
+
+<img width="1080" height="575" alt="Screenshot 2025-10-24 185617" src="https://github.com/user-attachments/assets/ef6a3afb-5e72-40bb-bae9-6f1a5c2c6d40" />
+
 # **Step:-7 : Clean Up**
 
 1. Deleted created Code Pipeline.
