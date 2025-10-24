@@ -42,5 +42,6 @@ post_build:
 
 artifacts:
   files:
-    - appspec.yaml
+    - ../appspec.yaml
+
 
