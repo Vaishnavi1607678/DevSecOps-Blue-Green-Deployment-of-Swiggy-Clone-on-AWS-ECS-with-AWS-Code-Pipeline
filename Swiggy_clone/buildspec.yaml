@@ -42,6 +42,7 @@ post_build:
 
 artifacts:
   files:
-    - ../appspec.yaml
+    - '**/*'
+
 
 
