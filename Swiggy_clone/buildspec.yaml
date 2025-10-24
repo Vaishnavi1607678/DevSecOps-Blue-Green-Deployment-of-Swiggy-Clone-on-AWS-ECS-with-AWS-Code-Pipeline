@@ -17,7 +17,7 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - echo "Performing Trivy file scan before building the image..."
-      # Example commented lines must be properly indented
+      # Example of commented commands (properly indented)
       # - wget https://github.com/aquasecurity/trivy/releases/download/v0.19.2/trivy_0.19.2_Linux-64bit.tar.gz
       # - tar zxvf trivy_0.19.2_Linux-64bit.tar.gz
       # - export PATH=$PATH:$PWD
@@ -42,3 +42,4 @@ post_build:
 artifacts:
   files:
     - appspec.yaml
+
