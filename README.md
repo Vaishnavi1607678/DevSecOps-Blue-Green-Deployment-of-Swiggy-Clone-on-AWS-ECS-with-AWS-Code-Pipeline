@@ -7,7 +7,15 @@
 In the realm of modern software development, DevSecOps practices are gaining prominence for their emphasis on integrating security seamlessly into the software development lifecycle. One critical aspect of this approach is implementing efficient deployment strategies that not only ensure reliability but also maintain security standards. In this blog post, we will delve into the concept of Blue-Green deployment and demonstrate how to apply it to a Swiggy-clone application hosted on AWS ECS (Elastic Container Service) using AWS Code Pipeline.
 
 **What is Blue-Green Deployment?**  
-Blue-Green deployment is a technique used to minimize downtime and risk during the release of new versions of an application. In this approach, two identical production environments, termed ‘Blue’ and ‘Green’, are maintained. At any given time, only one environment (e.g., Blue) serves live traffic while the other (e.g., Green) remains idle. When a new version is to be deployed, the new version is deployed to the idle environment (Green). Once the deployment is validated, traffic is seamlessly switched to the updated environment (Green), allowing for quick rollback to the previous version if issues arise.
+
+**Blue-Green Deployment** is a deployment technique that ensures **zero downtime** and **minimal risk** during updates.  
+It works by maintaining two identical environments:
+
+- 🟦 **Blue (Live)** – The current version serving production traffic.  
+- 🟩 **Green (Idle)** – The new version to be deployed and tested.  
+
+Once validated, traffic is seamlessly switched from Blue ➜ Green.  
+If any issues arise, CodeDeploy automatically rolls back to Blue.
 
 **Setting up AWS ECS for Swiggy-Clone:**  
 To demonstrate Blue-Green deployment, we’ll use AWS ECS to host our Swiggy-clone application. ECS is a highly scalable container orchestration service provided by AWS.
